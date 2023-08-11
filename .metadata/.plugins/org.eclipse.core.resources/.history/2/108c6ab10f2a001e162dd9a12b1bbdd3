@@ -1,0 +1,51 @@
+package com.worldhourproject.utility;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.ResourceBundle;
+
+public class JDBCDataSource {
+	public static void main(String[] args) {
+		ResourceBundle rb = ResourceBundle.getBundle("worldhourproj.System");
+		String url = rb.getString("url");
+		System.out.println(url);
+		
+		try {
+			Connection con = DriverManager.getConnection(url, "root", "root");
+			System.out.println(con);
+			
+			LocalDateTime now = LocalDateTime.now();
+			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+			String currDateStr = dtf.format(now);
+			System.out.println(currDateStr);
+			PreparedStatement pstmt = con.prepareStatement("alter table country_date_time auto_increment=1");
+			pstmt.execute();
+			pstmt = con.prepareStatement("delete from country_date_time where id=1");
+			pstmt.execute();
+			pstmt = con.prepareStatement("insert into country_date_time(country_name, country_date_time) values (?, ?)");
+			pstmt.setString(1, "Romania");
+			pstmt.setString(2, currDateStr);
+			pstmt.executeUpdate();
+			while(true) {
+				now = LocalDateTime.now();
+				//DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+				currDateStr = dtf.format(now);
+				pstmt = con.prepareStatement("update country_date_time set country_date_time=? where id=1");
+				pstmt.setString(1, currDateStr);
+				pstmt.executeUpdate();
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

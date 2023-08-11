@@ -1,0 +1,25 @@
+package com.worldhourproject.utility;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.worldhourproject.bean.*;
+
+@WebServlet("/addcountry")
+public class AddCountryAdminPageServlet extends HttpServlet{
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String cname = req.getParameter("country-name");
+		String ccapital = req.getParameter("country-capital");
+		String ccontinent = req.getParameter("ccontinent");
+		
+		CountryBean country = new CountryBean(cname);
+	}
+
+}

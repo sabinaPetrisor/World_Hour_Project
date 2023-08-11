@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="com.worldhourproject.utility.JDBCDataSource"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="worldhourproject.controller.WHPView"%>
+<%@page import="com.worldhourproject.dao.CountryDAO"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>World Hour Project Admin Page</title>
+		<style> <%@include file="../css/navbar.css" %> </style>
+		<style> <%@include file="../css/admin.css" %> </style>
+	</head>
+	<body>
+		<%@include file="navbar.jsp" %>
+		
+		<div class="content-container">
+			<p class="content-container-title">All Countries Details</p>
+			<div class="btn-container">
+				<button class="add-button" onclick="window.location.href='<%=WHPView.AddCountryPage%>'">Add Country</button>
+			</div>
+	
+			<table class="tbl">
+				<tr class="tbl-col-names">
+					<th>No.</th>
+					<th>Country Name</th>
+					<th>Country Date and Time</th>
+					<th>Action</th>
+				</tr>
+				
+				<%
+					CountryDAO cdao = new CountryDAO()
+				%>
+			</table>
+		</div>
+	</body>
+</html>

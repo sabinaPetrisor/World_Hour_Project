@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="worldhourproject.controller.WHPView"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<title>World Hour Project Add Country</title>
+	<style> <%@include file="../css/navbar.css" %> </style>
+	<style> <%@include file="../css/admin.css" %> </style>
+	<style> <%@include file="../css/add-page-admin.css" %> </style>
+</head>
+<body>
+	<%@include file="navbar.jsp" %>
+	
+	<div class="content-container">
+		<p class="content-container-title">Add a New Country</p>
+		<div class="add-form-container">
+			<form class="add-form" action="<%=WHPView.AddCountryServlet %>" method="post">
+				<label for="cname">Country Name</label>
+				<input type="text" placeholder="Type a Country Name" class="insert-text" id="cname" name="country-name">
+				<label for="ccapital">Country Capital</label>
+				<input type="text" placeholder="Type Country's Capital" class="insert-text" id="ccapital" name="country-capital">
+				<label for="ccontinent">Country Continent</label>
+				<select class="option-selection" id="ccontinent" name="country-continent">
+					<script type="text/javascript"><%@include file="../javascript/dropdown-list-selection.js" %></script>
+					<option value="Africa" selected="selected">Africa</option>
+					<option value="America">America</option>
+					<option value="Asia">Asia</option>
+					<option value="Atlantic">Atlantic</option>
+					<option value="Australia">Australia</option>
+					<option value="Europe">Europe</option>
+					<option value="Indian">Indian</option>
+					<option value="Pacific">Pacific</option>
+				</select>
+				<div class="btn-container">
+					<button type="submit" class="add-button">Add Country</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
