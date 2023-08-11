@@ -1,7 +1,0 @@
-INDEX VERSION 1.134
-D:\proiecte_extra\World_Hour_Java_Maven\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3604752792.index
-\WorldHourProject\src\main\resources
-D:\proiecte_extra\World_Hour_Java_Maven\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3164418863.index
-\WorldHourProject\src\main\java
-D:\proiecte_extra\World_Hour_Java_Maven\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2785856908.index
-\WorldHourProject\src\main\java

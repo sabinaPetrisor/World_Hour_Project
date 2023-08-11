@@ -1,5 +1,0 @@
-$(document).ready(function() {
-	var continentName = $('#ccontinentval').val();
-	/*console.log(`Continent name is: ${continentName}`);*/
-	$(`#ccontinent option[value=${continentName}]`).attr('selected', 'selected');
-});

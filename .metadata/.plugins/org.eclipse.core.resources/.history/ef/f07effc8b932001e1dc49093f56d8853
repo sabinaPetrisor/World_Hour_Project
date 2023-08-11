@@ -1,8 +1,0 @@
-url = jdbc:mysql://localhost:3306/worldhourproject
-username = root
-password = root
-acquireIncrement = 10
-initialPoolSize = 10
-maxPoolSize = 100
-minPoolSize = 10
-timeout = 10

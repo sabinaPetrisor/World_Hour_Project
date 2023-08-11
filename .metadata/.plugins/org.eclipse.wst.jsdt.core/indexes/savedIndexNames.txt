@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+D:\proiecte_extra\World_Hour_Java_Maven\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-263476305.index
-2136554512.index
-1777627924.index
-847649944.index
-3164418863.index
-3982367427.index
-3836612892.index

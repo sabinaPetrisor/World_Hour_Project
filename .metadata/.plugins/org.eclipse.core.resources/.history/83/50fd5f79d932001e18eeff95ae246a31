@@ -1,9 +1,0 @@
-package worldhourproject.controller;
-
-public interface WHPView {
-	public String APP_CONTEXT = "/WorldHourProject";
-	public String PAGE_FOLDER = "/jsp";
-	
-	public String MainServlet = APP_CONTEXT + "/MainServlet";
-	public String AddCountryServlet = APP_CONTEXT + "/addcountry";
-}

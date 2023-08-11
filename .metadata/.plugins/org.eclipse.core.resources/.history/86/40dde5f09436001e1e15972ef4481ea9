@@ -1,3 +1,0 @@
-$(document).ready(function(continent_value) {
-	$('#ccontinent option[value=continent_value]').attr('selected', 'selected');
-});
