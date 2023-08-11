@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<title>World Hour Project Add Country</title>
+	<style> <%@include file="../css/navbar.css" %> </style>
+	<style> <%@include file="../css/admin.css" %> </style>
+	<style> <%@include file="../css/add-page-admin.css" %> </style>
+</head>
+<body>
+	<%@include file="navbar.jsp" %>
+	
+	<div class="content-container">
+		<p class="content-container-title">Add a New Country</p>
+		<div class="add-form-container">
+			<form class="add-form" action="/addcountry" method="post">
+				<label for="cname">Country Name</label>
+				<input type="text" placeholder="Type a Country Name" class="insert-text" id="cname" name="country-name">
+				<label for="ccapital">Country Capital</label>
+				<input type="text" placeholder="Type Country's Capital" class="insert-text" id="ccapital" name="country-capital">
+				<label for="ccontinent">Country Continent</label>
+				<select class="option-selection" id="ccontinent" name="country-continent">
+					<option value="africa">Africa</option>
+					<option value="america">America</option>
+					<option value="asia">Asia</option>
+					<option value="atlantic">Atlantic</option>
+					<option value="australia">Australia</option>
+					<option value="europe">Europe</option>
+					<option value="indian">Indian</option>
+					<option value="pacific">Pacific</option>
+				</select>
+			</form>
+		</div>
+		<div class="btn-container">
+			<input type="submit" class="add-button" value="Add Country">
+		</div>
+	</div>
+</body>
+</html>

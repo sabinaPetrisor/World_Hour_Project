@@ -1,0 +1,4 @@
+$(document).ready(function() {
+	var continentName = $('#ccontinent').val(); 
+	$('#ccontinent option[value=continentName]').attr('selected', 'selected');
+});

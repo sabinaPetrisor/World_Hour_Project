@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	width: 100%;
+}
+
+/*.header-container {
+	position: relative;
+	width: 100%;
+	background-color: blueviolet;
+	display: flex;
+}
+
+.header-title {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.home-page-title {
+	font-size: 20px;
+	font-weight: bold;
+	width: auto;
+}
+
+.home-page-title:hover {
+	color: cadetblue;
+	cursor: pointer;
+}*/
+
+.content-container {
+	margin-top: 3%;
+}
+
+.content-container-title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+}
+
+.add-button {
+	padding: 1%;
+	margin-bottom: 3%;
+	background-color: blueviolet;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	width:auto;
+	cursor: pointer;
+}
+
+.tbl {
+	margin: 0 auto;
+	border-collapse: collapse;
+	table-layout: auto;
+	width: auto;
+	
+}
+
+.tbl-col-names {
+	border: 2px solid blueviolet;
+	background-color: blueviolet;
+}
+
+.tbl td, .tbl-col-names th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  width: auto;
+}
+
+.tbl tr:nth-child(even) {
+  background-color: #dddddd;
+}

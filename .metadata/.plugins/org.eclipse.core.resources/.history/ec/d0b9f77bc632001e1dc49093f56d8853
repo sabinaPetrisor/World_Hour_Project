@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	width: 100%;
+}
+
+.add-form-container {
+	display: flex;
+	justify-content: center;
+}
+
+.add-form {
+	width: 50%;
+}
+
+.insert-text, .option-selection {
+	margin-bottom: 2%;
+	padding: 1%;
+}

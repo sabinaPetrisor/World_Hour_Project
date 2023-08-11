@@ -1,0 +1,5 @@
+function handle_dropdown_list(){
+	var dropdown_list = document.getElementById("ccontinent");
+	var dropdown_list_value = dropdown_list.options[dropdown_list.selectedIndex].value;
+	console.log(dropdown_list_value);
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	width: 100%;
+}
+
+.add-form-container {
+	margin: 0 auto;
+}
+
+.add-form {
+	width: 75%;
+}

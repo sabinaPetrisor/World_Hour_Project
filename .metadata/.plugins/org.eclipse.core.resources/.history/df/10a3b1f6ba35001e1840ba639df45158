@@ -1,0 +1,12 @@
+$(document).ready(function() {
+	$('#add-button').click(function() {
+		var continentName = $('#ccontinent option:selected').val();
+		
+		$ajax({
+			type: 'post',
+			url: "<%=WHPView.AddCountryServlet %>",
+			data: continentName
+		})
+		
+	})
+});

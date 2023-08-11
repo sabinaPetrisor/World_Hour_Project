@@ -1,0 +1,83 @@
+package com.worldhourproject.bean;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class CountryBean {
+	private int id;
+	private String country_name;
+	private String country_capital;
+	private String country_continent;
+	//private String country_date_time;
+	private LocalDate country_date;
+	private LocalTime country_time;
+	
+	public CountryBean() {
+		
+	}
+	
+	public CountryBean(int id, String country_name, String country_capital, String country_continent, LocalDate country_date, LocalTime country_time) {
+		this.id = id;
+		this.country_name = country_name;
+		this.country_capital = country_capital;
+		this.country_continent = country_continent;
+		this.country_date = country_date;
+		this.country_time = country_time;
+	}
+	
+	public CountryBean(String country_name, String country_capital, String country_continent, LocalDate country_date, LocalTime country_time) {
+		this.country_name = country_name;
+		this.country_capital = country_capital;
+		this.country_continent = country_continent;
+		this.country_date = country_date;
+		this.country_time = country_time;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCountry_name() {
+		return country_name;
+	}
+
+	public void setCountry_name(String country_name) {
+		this.country_name = country_name;
+	}
+
+	public String getCountry_capital() {
+		return country_capital;
+	}
+
+	public void setCountry_capital(String country_capital) {
+		this.country_capital = country_capital;
+	}
+
+	public String getCountry_continent() {
+		return country_continent;
+	}
+
+	public void setCountry_continent(String country_continent) {
+		this.country_continent = country_continent;
+	}
+
+	public LocalDate getCountry_date() {
+		return country_date;
+	}
+
+	public void setCountry_date(LocalDate country_date) {
+		this.country_date = country_date;
+	}
+	
+	public LocalTime getCountry_time() {
+		return country_time;
+	}
+
+	public void setCountry_time(LocalTime country_time) {
+		this.country_time = country_time;
+	}
+}
